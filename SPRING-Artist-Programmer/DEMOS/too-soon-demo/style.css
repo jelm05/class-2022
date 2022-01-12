@@ -1,0 +1,12 @@
+
+/* a period denotes a class  */
+
+div.box {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  cursor: pointer;
+}
