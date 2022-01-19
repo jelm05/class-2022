@@ -1,0 +1,123 @@
+body, html {
+  margin: 0;
+  padding: 0; 
+}
+
+/* 
+Position options: 
+relative, absolute, sticky, fixed 
+*/
+
+div {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+div.parent 
+{
+  margin: 40px;
+  background-color: #218cff;
+}
+
+div.child { margin: 5px; }
+
+div.child-one {
+  background-color: #fb21ff;
+}
+
+div.child-two {
+  background-color: #21ff4a;
+}
+
+div.child-three {
+  background-color: #ff9021;
+}
+
+/* Position relative */
+
+/* Relative essentially means, change the position of the 
+element relatively to where it would be if it was static */
+/* Relative also means the element is removed from "document flow" */
+
+/* div.child {
+  float: left;
+} */
+
+/* div.child-one {
+  position: relative;
+  left: 50px;
+  top: 100px;
+} */
+
+/* Position absolute */
+/* This also takes the element out of the document flow */
+/* Position absolute is in relation to its parent */
+
+/* div.parent {
+  position: relative;
+}
+
+div.child-one {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  /* Top / left / right / bottom
+} */
+
+/* Position fixed */
+/* Fixed positioned elements are positioned based on the entire HTML element */
+/* Fixed positioned elements stay in one place when scrolling  */
+
+/* div.parent {
+  /* vh = viewport height 
+  height: 200vh;
+}
+
+div.child-one {
+  position: fixed;
+  top: 0;
+} */
+
+/* Position sticky */
+/* Sort of combines relative and fixed into position style */
+
+div.parent {
+  height: 300vh;
+}
+
+div.child-one {
+  position: sticky;
+  top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
