@@ -1,0 +1,83 @@
+
+/* GLOBAL STYLES */
+
+body {
+  /* Sans-serif is a fallback font */
+  font-family: Helvetica, sans-serif, serif;
+}
+
+header {
+  padding: 10px;
+  font-size: 2em;
+  /* Color = font color, not background-color */
+  color: white;
+  background-color: #333;
+}
+
+.leading {
+  height: 240px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color: white;
+  background-color: #333;
+}
+
+.big-text {
+  font-weight: bold;
+  font-size: 16vw;
+  margin-right: 30px;
+}
+
+.regular-text {
+  max-width: 900px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+@media (min-width: 700px) {
+  .leading {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.projects {
+  max-width: 960px;
+  /* top, left/right, bottom */
+  /* top=0, left&right=auto, bottom=30px */
+  /* This centers our projects section IF the browser is wider than 960px */
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+  border: 3px solid black;
+}
+
+/* Grid styles */
+
+.projects {
+  display: grid;
+  /* repeat() function represents a repeated fragment */
+  /* it allows a large number of columns (or rows) to exhibit a recurring pattern */
+  /* This is basically for efficiency */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
+  grid-gap: 30px;
+}
+
+/* Article with an image as a child  */
+article img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* article title to overlap image */
+.article-title {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  padding: 10px;
+  /* A = alpha channel, think of it like opacity */
+  background-color: rgba(255, 255, 255, 0.2);
+}
