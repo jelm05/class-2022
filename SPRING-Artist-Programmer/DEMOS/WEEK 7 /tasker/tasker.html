@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task List</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tasker.css">
+  </head>
+  <body>
+
+    <section id="controls">
+      <h1>Task List</h1>
+
+      <input id="task-input" placeholder="Enter A Task" autofocus>
+
+      <div class="buttons">
+        <button id="new-task">New Task</button>
+        <button id="mark-all">Mark All Tasks Completed</button>
+        <button id="delete-completed">Delete All Completed Tasks</button>
+      </div>
+
+    </section>
+
+    <section id="task-container">
+      <ul id="task-list">
+        <!--
+        This is where our tasks will go, as list items <li> </li>
+        We're going to generate HTML via JavaScript, that will go here
+        -->
+      </ul>
+    </section>
+
+    <!-- This MUST go at the bottom of the file -->
+    <script src="tasker.js"></script>
+  </body>
+</html>
