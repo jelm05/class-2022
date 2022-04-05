@@ -1,0 +1,61 @@
+
+body, html {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+#world {
+  position: relative;
+  /* Top/Bottom and Right/Left */
+  margin: 0 auto;
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+  overflow: hidden;
+  background-color: #a5cfd9;
+}
+
+#ground {
+  position: absolute;
+  /* Set this value in relation to the world, which is its parent */
+  top: 380px;
+  left: 0px;
+  /* Set this value to the same as the width of the world */
+  width: 600px;
+  height: 20px;
+  border-top: 3px solid #8ca862;
+  background-color: green;
+}
+
+.display {
+  position: relative;
+  padding: 5px;
+  z-index: 100;
+}
+
+.message {
+  position: absolute;
+  padding: 30px;
+  left: 190px;
+  top: 140px;
+  background-color: white;
+  width: 170px;
+  text-align: center;
+  z-index: 100;
+}
+
+#startGame {
+  cursor: pointer;
+}
+
+#gameOver {
+  display: none;
+}
+
+#char {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background-color: black;
+  /* Add a background img or gif to make it more cool */
+}

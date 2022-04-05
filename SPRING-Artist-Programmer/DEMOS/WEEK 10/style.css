@@ -1,0 +1,35 @@
+
+/* We're overriding bootstrap generic styles */
+
+#navbar-header {
+  /* Color applies to text color */
+  color: white;
+}
+
+/* Only target the anchor tags that are children of navbar-header */
+#navbar-header a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Give an underline to anchor tags that are children of navbar-header when you hover */
+#navbar-header a:hover {
+  text-decoration: underline;
+}
+
+a#home {
+  text-decoration: none;
+}
+
+a#home:hover {
+  text-decoration: underline;
+}
+
+#portfolio-title {
+  color: blue;
+}
+
+#carousel-demo {
+  max-width: 50%;
+  margin: 0 auto;
+}
